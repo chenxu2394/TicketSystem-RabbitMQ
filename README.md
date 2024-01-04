@@ -1,6 +1,6 @@
 # RabbitMQ Amusement Park Ticketing System
 
-This repository contains my implementation of an asynchronous messaging system for an amusement park ticketing application, using RabbitMQ. This project is part of an assignment I completed, which focuses on building distributed systems with asynchronous messaging principles.
+This repository contains my implementation of an asynchronous messaging system for an amusement park ticketing application, using RabbitMQ. This project is part of an assignment I completed for the Cloud Software and Systems course offered by the Department of Computer Science at Aalto University. It focuses on building distributed systems with asynchronous messaging principles.
 
 ## Project Overview
 
