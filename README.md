@@ -10,6 +10,20 @@ The application simulates an amusement park ticketing system, comprising of thre
 - **Ticket Worker (TicketWorker)**: Processes ticket events by verifying customer details and ride prices, and then notifying the customers.
 - **Customer App (CustomerEventConsumer)**: Receives notifications about ticket processing for individual customers.
 
+## Message Flow Diagram
+
+```mermaid
+flowchart TD
+    A(Ticket Machine) -->|Direct Exchange| B[Worker Queue]
+    B --> |Invalid|Z[Dead Letter Exchange]
+    B --> |Valid| C{ }
+    C --> Y[Worker 1]
+    C --> X[Worker 2]
+    X --> D[Topic Exchange]
+    Y --> D[Topic Exchange]
+    D --> E(Customer App)
+```
+
 ## System Architecture
 
 ```mermaid
